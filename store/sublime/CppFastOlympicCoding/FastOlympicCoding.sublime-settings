@@ -2,7 +2,7 @@
 	"run_settings": [
 		{
 			"name": "C++",
-			"extensions": ["cpp"],
+			"extensions": ["cpp", "cc"],
 			"compile_cmd": "g++ \"{source_file}\" -o \"{file_name}\" -std=c++20",
 			"run_cmd": "./\"{file_name}\" {args} -debug",
 

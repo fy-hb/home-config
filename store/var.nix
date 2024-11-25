@@ -20,6 +20,9 @@
   #
   home.sessionVariables = {
     EDITOR = "nvim";
+    ICPC_FONT = "Source Han Sans CN";
+    QT_SELECT = 5;
+    QT_AUTO_SCREEN_SCALE_FACTOR = 1;
 #     TERM = "wezterm";
 #     DISPLAY = ":0";
 #     DIRENV_LOG_FORMAT = ""; # close direnv log
