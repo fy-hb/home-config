@@ -1,18 +1,16 @@
+{ pkgs, ... }:
 {
-  # inputs,
-  pkgs,
-  ...
-}:
-{
-  programs.neovim = {
-    enable = true;
-    extraLuaPackages = ps: [ ps.magick ];
-    # package = inputs.neovim-nightly.packages.${pkgs.system}.default;
-  };
-  home.packages = with pkgs; [
-    imagemagick
-    lua51Packages.lua
-    luajitPackages.luarocks
-    tree-sitter
-  ];
+#   programs.neovim = {
+#     enable = true;
+#     extraLuaPackages = ps: [ ps.magick ];
+#     extraPackages = [ pkgs.imagemagick ];
+#     package = pkgs.neovim;
+#   };
+#   home.packages = with pkgs; [
+#     fnlfmt
+#     lua51Packages.lua
+#     luajitPackages.luarocks
+#     tree-sitter
+#     imagemagick
+#   ];
 }

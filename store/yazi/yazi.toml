@@ -23,3 +23,4 @@ edit = [{ run = 'nvim "$@"', block = true }]
 
 [plugin]
 prepend_previewers = [{ mime = "audio/*", run = "exifaudio" }]
+prepend_fetchers   = [{ id = "git", name = "*", run = "git" }, { id = "git", name = "*/", run = "git" }]
