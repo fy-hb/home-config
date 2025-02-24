@@ -6,11 +6,11 @@
     shellAliases = {
       v = "nvim";
       vi = "nvim";
-#       lg = "lazygit";
-#       fa = "fastfetch";
+      lg = "lazygit";
+      fa = "fastfetch";
       cls = "clear";
       py = "python";
-#       ls = "eza --icons --group-directories-first --sort=extension -F";
+      ls = "eza --icons --group-directories-first --sort=extension -F";
 #       vf = "set -l file (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'); and test -n \"\$file\"; and vi \"\$file\"";
 #       zf = "z \$(fd --type d --hidden . 2>/dev/null | fzf)";
     };
@@ -40,16 +40,6 @@
           commandline -f repaint
       '';
       };
-#       y = {
-#         body = ''
-#           set tmp (mktemp -t "yazi-cwd.XXXXXX")
-#           yazi $argv --cwd-file="$tmp"
-#           if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-#               builtin cd -- "$cwd"
-#           end
-#           rm -f -- "$tmp"
-#         '';
-#       };
     };
     interactiveShellInit = builtins.readFile ./config.fish;
   };

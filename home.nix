@@ -8,7 +8,7 @@
   };
 
   home.packages = with pkgs; [
-    nh lazygit lazydocker gradience nix-init nil
+    nh lazygit lazydocker gradience nix-init nil eza
   ];
 
   # Let Home Manager install and manage itself.
