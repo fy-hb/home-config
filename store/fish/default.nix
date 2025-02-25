@@ -13,6 +13,7 @@
       ls = "eza --icons --group-directories-first --sort=extension -F";
       vf = "set -l file (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'); and test -n \"\$file\"; and vi \"\$file\"";
       zf = "z \$(fd --type d --hidden . 2>/dev/null | fzf)";
+      gg = "rg --max-columns=150 --max-columns-preview --colors=line:none --colors=line:style:bold -S";
     };
 
     functions = {
