@@ -1,15 +1,10 @@
 { config, pkgs, ... }:
-
 {
   home = {
     username = "frost_ice";
     homeDirectory = "/home/frost_ice";
     stateVersion = "24.05";
   };
-
-  home.packages = with pkgs; [
-    nh lazygit lazydocker gradience nix-init nil eza fzf ripgrep fd bat
-  ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
