@@ -1,9 +1,13 @@
  {pkgs, ...}: {
   programs.git = {
     enable = true;
-    userName = "fy-hb";
-    userEmail = "frost_ice@qq.com";
     package = pkgs.gitFull;
+    extraConfig = {
+      user.signingkey="58F0009E76DB637F";
+      user.email="fyhb233@gmail.com";
+      user.name="F. ICE";
+      commit.gpgsign=true;
+    };
   };
 }
 
