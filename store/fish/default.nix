@@ -17,12 +17,19 @@
     };
 
     functions = {
+      mk = {
+        body = ''
+          set base $argv[1]
+          set flags $argv[2..-1]
+          g++ $base.cpp -o $base $flags
+        '';
+      };
       __fish_command_not_found_handler = {
-          body = "__fish_default_command_not_found_handler $argv[1]";
-          onEvent = "fish_command_not_found";
+        body = "__fish_default_command_not_found_handler $argv[1]";
+        onEvent = "fish_command_not_found";
       };
       __fish_list_current_token = {
-          body = ''
+        body = ''
           set -l val (commandline -t | string replace -r '^~' "$HOME")
           printf "\n"
           if test -d $val
@@ -39,7 +46,7 @@
           string repeat -N \n --count=(math (count (fish_prompt)) - 1)
 
           commandline -f repaint
-      '';
+        '';
       };
     };
     interactiveShellInit = builtins.readFile ./config.fish;
