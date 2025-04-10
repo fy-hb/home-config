@@ -9,5 +9,6 @@
       commit.gpgsign=true;
     };
   };
+  services.gpg-agent.pinentryPackage = pkgs.pinentry-tty;
 }
 

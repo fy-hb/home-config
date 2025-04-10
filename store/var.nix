@@ -3,7 +3,7 @@
 {
   home.sessionVariables = {
     EDITOR = "nvim";
-    ICPC_FONT = "Source Han Sans CN";
+    ICPC_FONT = "WenQuanYi Micro Hei";
     QT_SELECT = 5;
     QT_AUTO_SCREEN_SCALE_FACTOR = 1;
     #LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:/run/opengl-driver/lib";
