@@ -9,6 +9,14 @@
       commit.gpgsign=true;
     };
   };
-  services.gpg-agent.pinentryPackage = pkgs.pinentry-tty;
+  programs.gpg = {
+    enable = true;
+#     package = pkgs.pinentry-tty;
+    settings = {
+      pinentry-mode="loopback";
+      keyid-format="0xlong";
+      with-fingerprint=true;
+    };
+  };
 }
 
