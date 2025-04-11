@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-fish.url = "github:NixOS/nixpkgs/fish";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -17,9 +16,9 @@
         inherit system;
         config.allowUnfree = true;
         overlays = with inputs; [
-          (final: prev: {
-            fish = nixpkgs-fish.legacyPackages.${system}.fish;
-          })
+#           (final: prev: {
+#             fish = nixpkgs-fish.legacyPackages.${system}.fish;
+#           })
         ];
       };
     in {

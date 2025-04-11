@@ -9,14 +9,14 @@
       commit.gpgsign=true;
     };
   };
-  programs.gpg = {
-    enable = true;
-#     package = pkgs.pinentry-tty;
-    settings = {
-      pinentry-mode="loopback";
-      keyid-format="0xlong";
-      with-fingerprint=true;
-    };
-  };
+#   programs.gpg = {
+#     enable = true;
+#     package = pkgs.pinentry-all;
+#     settings = {
+# #       pinentry-mode="loopback";
+#       keyid-format="0xlong";
+#       with-fingerprint=true;
+#     };
+#   };
 }
 
