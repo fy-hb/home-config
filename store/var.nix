@@ -19,6 +19,6 @@
 #     DIRENV_LOG_FORMAT = ""; # close direnv log
 #     FLAKE = "/home/parsifa1/nixos/";
 #     PNPM_HOME = "/home/parsifa1/.local/share/pnpm";
-#     PATH = "$PATH:$HOME/.cargo/bin:/usr/lib/wsl/lib:/bin";
+    PATH = "$PATH:$HOME/.cargo/bin:/usr/lib/wsl/lib:/home/frost_ice/.local/bin";
   };
 }

@@ -51,5 +51,4 @@
     };
     interactiveShellInit = builtins.readFile ./config.fish;
   };
-  home.packages = with pkgs; [ just ];
 }
