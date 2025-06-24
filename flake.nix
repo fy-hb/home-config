@@ -15,7 +15,7 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        overlays = with inputs; [
+        overlays = [
 #           (final: prev: {
 #             fish = nixpkgs-fish.legacyPackages.${system}.fish;
 #           })

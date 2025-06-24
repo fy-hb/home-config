@@ -1,491 +1,1568 @@
-# vim:fileencoding=utf-8:foldmethod=marker
+[[filetype.prepend_rules]]
+fg = "#94e2d5"
+mime = "image/*"
 
-# : Manager {{{
+[[filetype.prepend_rules]]
+fg = "#f9e2af"
+mime = "video/*"
 
-[manager]
-cwd = { fg = "#83a598" }
+[[filetype.prepend_rules]]
+fg = "#f9e2af"
+mime = "audio/*"
 
-# Hovered
-hovered = { fg = "#282828", bg = "#83a598" }
-preview_hovered = { underline = false }
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/zip"
 
-# Find
-find_keyword = { fg = "#b8bb26", italic = true }
-find_position = { fg = "#fe8019", bg = "reset", italic = true }
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/gzip"
 
-# Marker
-marker_selected = { fg = "#b8bb26", bg = "#b8bb26" }
-marker_copied = { fg = "#b8bb26", bg = "#b8bb26" }
-marker_cut = { fg = "#fb4934", bg = "#fb4934" }
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/x-tar"
 
-# Tab
-tab_active = { fg = "#282828", bg = "#504945" }
-tab_inactive = { fg = "#a89984", bg = "#3c3836" }
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/x-bzip"
+
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/x-bzip2"
+
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/x-7z-compressed"
+
+[[filetype.prepend_rules]]
+fg = "#f5c2e7"
+mime = "application/x-rar"
+
+[[filetype.prepend_rules]]
+fg = "#cdd6f4"
+name = "*"
+
+[[filetype.prepend_rules]]
+fg = "#89b4fa"
+name = "*/"
+
+[help.desc]
+fg = "#928374"
+
+[help.exec]
+fg = "#83a598"
+
+[help.footer]
+bg = "#a89984"
+fg = "#3c3836"
+
+[help.hovered]
+bg = "#504945"
+bold = true
+
+[help.on]
+fg = "#fe8019"
+
+[[icon.append_rules]]
+name = ".git/"
+text = ""
+
+[[icon.append_rules]]
+name = "Desktop/"
+text = ""
+
+[[icon.append_rules]]
+name = "Documents/"
+text = ""
+
+[[icon.append_rules]]
+name = "Downloads/"
+text = ""
+
+[[icon.append_rules]]
+name = "Dotfiles/"
+text = ""
+
+[[icon.append_rules]]
+name = "Dropbox/"
+text = ""
+
+[[icon.append_rules]]
+name = "Music/"
+text = ""
+
+[[icon.append_rules]]
+name = "Pictures/"
+text = ""
+
+[[icon.append_rules]]
+name = "Public/"
+text = ""
+
+[[icon.append_rules]]
+name = "Templates/"
+text = ""
+
+[[icon.append_rules]]
+name = "Videos/"
+text = ""
+
+[[icon.append_rules]]
+name = ".bash_aliases"
+text = ""
+
+[[icon.append_rules]]
+name = ".bash_history"
+text = ""
+
+[[icon.append_rules]]
+name = ".bash_logout"
+text = ""
+
+[[icon.append_rules]]
+name = ".bash_profile"
+text = ""
+
+[[icon.append_rules]]
+name = ".bashprofile"
+text = ""
+
+[[icon.append_rules]]
+name = ".bashrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".dmrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".DS_Store"
+text = ""
+
+[[icon.append_rules]]
+name = ".fasd"
+text = ""
+
+[[icon.append_rules]]
+name = ".fehbg"
+text = ""
+
+[[icon.append_rules]]
+name = ".gitattributes"
+text = ""
+
+[[icon.append_rules]]
+name = ".gitconfig"
+text = ""
+
+[[icon.append_rules]]
+name = ".gitignore"
+text = ""
+
+[[icon.append_rules]]
+name = ".gitlab-ci.yml"
+text = ""
+
+[[icon.append_rules]]
+name = ".gvimrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".inputrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".jack-settings"
+text = ""
+
+[[icon.append_rules]]
+name = ".mime.types"
+text = ""
+
+[[icon.append_rules]]
+name = ".ncmpcpp"
+text = ""
+
+[[icon.append_rules]]
+name = ".nvidia-settings-rc"
+text = ""
+
+[[icon.append_rules]]
+name = ".pam_environment"
+text = ""
+
+[[icon.append_rules]]
+name = ".profile"
+text = ""
+
+[[icon.append_rules]]
+name = ".recently-used"
+text = ""
+
+[[icon.append_rules]]
+name = ".selected_editor"
+text = ""
+
+[[icon.append_rules]]
+name = ".vim"
+text = ""
+
+[[icon.append_rules]]
+name = ".viminfo"
+text = ""
+
+[[icon.append_rules]]
+name = ".vimrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".Xauthority"
+text = ""
+
+[[icon.append_rules]]
+name = ".Xdefaults"
+text = ""
+
+[[icon.append_rules]]
+name = ".xinitrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".xinputrc"
+text = ""
+
+[[icon.append_rules]]
+name = ".Xresources"
+text = ""
+
+[[icon.append_rules]]
+name = ".zshrc"
+text = ""
+
+[[icon.append_rules]]
+name = "_gvimrc"
+text = ""
+
+[[icon.append_rules]]
+name = "_vimrc"
+text = ""
+
+[[icon.append_rules]]
+name = "a.out"
+text = ""
+
+[[icon.append_rules]]
+name = "authorized_keys"
+text = ""
+
+[[icon.append_rules]]
+name = "bspwmrc"
+text = ""
+
+[[icon.append_rules]]
+name = "cmakelists.txt"
+text = ""
+
+[[icon.append_rules]]
+name = "config"
+text = ""
+
+[[icon.append_rules]]
+name = "config.ac"
+text = ""
+
+[[icon.append_rules]]
+name = "config.m4"
+text = ""
+
+[[icon.append_rules]]
+name = "config.mk"
+text = ""
+
+[[icon.append_rules]]
+name = "config.ru"
+text = ""
+
+[[icon.append_rules]]
+name = "configure"
+text = ""
+
+[[icon.append_rules]]
+name = "docker-compose.yml"
+text = ""
+
+[[icon.append_rules]]
+name = "dockerfile"
+text = ""
+
+[[icon.append_rules]]
+name = "Dockerfile"
+text = ""
+
+[[icon.append_rules]]
+name = "dropbox"
+text = ""
+
+[[icon.append_rules]]
+name = "exact-match-case-sensitive-1.txt"
+text = "X1"
+
+[[icon.append_rules]]
+name = "exact-match-case-sensitive-2"
+text = "X2"
+
+[[icon.append_rules]]
+name = "favicon.ico"
+text = ""
+
+[[icon.append_rules]]
+name = "gemfile"
+text = ""
+
+[[icon.append_rules]]
+name = "gruntfile.coffee"
+text = ""
+
+[[icon.append_rules]]
+name = "gruntfile.js"
+text = ""
+
+[[icon.append_rules]]
+name = "gruntfile.ls"
+text = ""
+
+[[icon.append_rules]]
+name = "gulpfile.coffee"
+text = ""
+
+[[icon.append_rules]]
+name = "gulpfile.js"
+text = ""
+
+[[icon.append_rules]]
+name = "gulpfile.ls"
+text = ""
+
+[[icon.append_rules]]
+name = "ini"
+text = ""
+
+[[icon.append_rules]]
+name = "known_hosts"
+text = ""
+
+[[icon.append_rules]]
+name = "ledger"
+text = ""
+
+[[icon.append_rules]]
+name = "license"
+text = ""
+
+[[icon.append_rules]]
+name = "LICENSE"
+text = ""
+
+[[icon.append_rules]]
+name = "LICENSE.md"
+text = ""
+
+[[icon.append_rules]]
+name = "LICENSE.txt"
+text = ""
+
+[[icon.append_rules]]
+name = "Makefile"
+text = ""
+
+[[icon.append_rules]]
+name = "makefile"
+text = ""
+
+[[icon.append_rules]]
+name = "Makefile.ac"
+text = ""
+
+[[icon.append_rules]]
+name = "Makefile.in"
+text = ""
+
+[[icon.append_rules]]
+name = "mimeapps.list"
+text = ""
+
+[[icon.append_rules]]
+name = "mix.lock"
+text = ""
+
+[[icon.append_rules]]
+name = "node_modules"
+text = ""
+
+[[icon.append_rules]]
+name = "package-lock.json"
+text = ""
+
+[[icon.append_rules]]
+name = "package.json"
+text = ""
+
+[[icon.append_rules]]
+name = "playlists"
+text = ""
+
+[[icon.append_rules]]
+name = "procfile"
+text = ""
+
+[[icon.append_rules]]
+name = "Rakefile"
+text = ""
+
+[[icon.append_rules]]
+name = "rakefile"
+text = ""
+
+[[icon.append_rules]]
+name = "react.jsx"
+text = ""
+
+[[icon.append_rules]]
+name = "README"
+text = ""
+
+[[icon.append_rules]]
+name = "README.markdown"
+text = ""
+
+[[icon.append_rules]]
+name = "README.md"
+text = ""
+
+[[icon.append_rules]]
+name = "README.rst"
+text = ""
+
+[[icon.append_rules]]
+name = "README.txt"
+text = ""
+
+[[icon.append_rules]]
+name = "sxhkdrc"
+text = ""
+
+[[icon.append_rules]]
+name = "user-dirs.dirs"
+text = ""
+
+[[icon.append_rules]]
+name = "webpack.config.js"
+text = ""
+
+[[icon.append_rules]]
+name = "*.3g2"
+text = ""
+
+[[icon.append_rules]]
+name = "*.3gp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.7z"
+text = ""
+
+[[icon.append_rules]]
+name = "*.8svx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.a"
+text = ""
+
+[[icon.append_rules]]
+name = "*.aa"
+text = ""
+
+[[icon.append_rules]]
+name = "*.aac"
+text = ""
+
+[[icon.append_rules]]
+name = "*.aax"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ai"
+text = ""
+
+[[icon.append_rules]]
+name = "*.aiff"
+text = ""
+
+[[icon.append_rules]]
+name = "*.alac"
+text = ""
+
+[[icon.append_rules]]
+name = "*.amr"
+text = ""
+
+[[icon.append_rules]]
+name = "*.amv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ape"
+text = ""
+
+[[icon.append_rules]]
+name = "*.apk"
+text = ""
+
+[[icon.append_rules]]
+name = "*.asf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.asm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.asp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.au"
+text = ""
+
+[[icon.append_rules]]
+name = "*.aup"
+text = ""
+
+[[icon.append_rules]]
+name = "*.avi"
+text = ""
+
+[[icon.append_rules]]
+name = "*.awb"
+text = ""
+
+[[icon.append_rules]]
+name = "*.awk"
+text = ""
+
+[[icon.append_rules]]
+name = "*.bash"
+text = ""
+
+[[icon.append_rules]]
+name = "*.bat"
+text = ""
+
+[[icon.append_rules]]
+name = "*.bmp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.bz2"
+text = ""
+
+[[icon.append_rules]]
+name = "*.c"
+text = ""
+
+[[icon.append_rules]]
+name = "*.c++"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cab"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cbr"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cbz"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cda"
+text = ""
+
+[[icon.append_rules]]
+name = "*.class"
+text = ""
+
+[[icon.append_rules]]
+name = "*.clj"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cljc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cljs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cmake"
+text = ""
+
+[[icon.append_rules]]
+name = "*.coffee"
+text = ""
+
+[[icon.append_rules]]
+name = "*.conf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cpio"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cpp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.csh"
+text = ""
+
+[[icon.append_rules]]
+name = "*.css"
+text = ""
+
+[[icon.append_rules]]
+name = "*.csv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cue"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cvs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.cxx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.d"
+text = ""
+
+[[icon.append_rules]]
+name = "*.dart"
+text = ""
+
+[[icon.append_rules]]
+name = "*.db"
+text = ""
+
+[[icon.append_rules]]
+name = "*.deb"
+text = ""
+
+[[icon.append_rules]]
+name = "*.diff"
+text = ""
+
+[[icon.append_rules]]
+name = "*.dll"
+text = ""
+
+[[icon.append_rules]]
+name = "*.doc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.docx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.dss"
+text = ""
+
+[[icon.append_rules]]
+name = "*.dump"
+text = ""
+
+[[icon.append_rules]]
+name = "*.dvf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.edn"
+text = ""
+
+[[icon.append_rules]]
+name = "*.eex"
+text = ""
+
+[[icon.append_rules]]
+name = "*.efi"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ejs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.elf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.elm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.epub"
+text = ""
+
+[[icon.append_rules]]
+name = "*.erl"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ex"
+text = ""
+
+[[icon.append_rules]]
+name = "*.exe"
+text = ""
+
+[[icon.append_rules]]
+name = "*.exs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.f//"
+text = ""
+
+[[icon.append_rules]]
+name = "*.fifo"
+text = "|"
+
+[[icon.append_rules]]
+name = "*.fish"
+text = ""
+
+[[icon.append_rules]]
+name = "*.flac"
+text = ""
+
+[[icon.append_rules]]
+name = "*.flv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.fs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.fsi"
+text = ""
+
+[[icon.append_rules]]
+name = "*.fsscript"
+text = ""
+
+[[icon.append_rules]]
+name = "*.fsx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gem"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gemspec"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gif"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gifv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.go"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gsm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gz"
+text = ""
+
+[[icon.append_rules]]
+name = "*.gzip"
+text = ""
+
+[[icon.append_rules]]
+name = "*.h"
+text = ""
+
+[[icon.append_rules]]
+name = "*.haml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hbs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hh"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hpp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hrl"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.htaccess"
+text = ""
+
+[[icon.append_rules]]
+name = "*.htm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.html"
+text = ""
+
+[[icon.append_rules]]
+name = "*.htpasswd"
+text = ""
+
+[[icon.append_rules]]
+name = "*.hxx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ico"
+text = ""
+
+[[icon.append_rules]]
+name = "*.iklax"
+text = ""
+
+[[icon.append_rules]]
+name = "*.img"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ini"
+text = ""
+
+[[icon.append_rules]]
+name = "*.iso"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ivs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.jar"
+text = ""
+
+[[icon.append_rules]]
+name = "*.java"
+text = ""
+
+[[icon.append_rules]]
+name = "*.jl"
+text = ""
+
+[[icon.append_rules]]
+name = "*.jpeg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.jpg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.js"
+text = ""
+
+[[icon.append_rules]]
+name = "*.json"
+text = ""
+
+[[icon.append_rules]]
+name = "*.jsx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.key"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ksh"
+text = ""
+
+[[icon.append_rules]]
+name = "*.leex"
+text = ""
+
+[[icon.append_rules]]
+name = "*.less"
+text = ""
+
+[[icon.append_rules]]
+name = "*.lha"
+text = ""
+
+[[icon.append_rules]]
+name = "*.lhs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.log"
+text = ""
+
+[[icon.append_rules]]
+name = "*.lua"
+text = ""
+
+[[icon.append_rules]]
+name = "*.lzh"
+text = ""
+
+[[icon.append_rules]]
+name = "*.lzma"
+text = ""
+
+[[icon.append_rules]]
+name = "*.m4a"
+text = ""
+
+[[icon.append_rules]]
+name = "*.m4b"
+text = ""
+
+[[icon.append_rules]]
+name = "*.m4p"
+text = ""
+
+[[icon.append_rules]]
+name = "*.m4v"
+text = ""
+
+[[icon.append_rules]]
+name = "*.markdown"
+text = ""
+
+[[icon.append_rules]]
+name = "*.md"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mdx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mjs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mka"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mkv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ml"
+text = "λ"
+
+[[icon.append_rules]]
+name = "*.mli"
+text = "λ"
+
+[[icon.append_rules]]
+name = "*.mmf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mng"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mogg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mov"
+text = ""
+
+[[icon.append_rules]]
+name = "*.movpkg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mp3"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mp4"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mpc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mpeg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mpg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.msi"
+text = ""
+
+[[icon.append_rules]]
+name = "*.msv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mustache"
+text = ""
+
+[[icon.append_rules]]
+name = "*.mxf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.nix"
+text = ""
+
+[[icon.append_rules]]
+name = "*.nmf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.norg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.o"
+text = ""
+
+[[icon.append_rules]]
+name = "*.oga"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ogg"
+text = ""
+
+[[icon.append_rules]]
+name = "*.opus"
+text = ""
+
+[[icon.append_rules]]
+name = "*.org"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pdf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.php"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pl"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.png"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ppt"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pptx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ps1"
+text = ""
+
+[[icon.append_rules]]
+name = "*.psb"
+text = ""
+
+[[icon.append_rules]]
+name = "*.psd"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pub"
+text = ""
+
+[[icon.append_rules]]
+name = "*.py"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pyc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pyd"
+text = ""
+
+[[icon.append_rules]]
+name = "*.pyo"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ra"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rake"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rar"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rb"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rf64"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rlib"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rmd"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rmvb"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rom"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rpm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rproj"
+text = "鉶"
+
+[[icon.append_rules]]
+name = "*.rs"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rss"
+text = ""
+
+[[icon.append_rules]]
+name = "*.rtf"
+text = ""
+
+[[icon.append_rules]]
+name = "*.s"
+text = ""
+
+[[icon.append_rules]]
+name = "*.sass"
+text = ""
+
+[[icon.append_rules]]
+name = "*.scala"
+text = ""
+
+[[icon.append_rules]]
+name = "*.scss"
+text = ""
+
+[[icon.append_rules]]
+name = "*.sh"
+text = ""
+
+[[icon.append_rules]]
+name = "*.slim"
+text = ""
+
+[[icon.append_rules]]
+name = "*.sln"
+text = ""
+
+[[icon.append_rules]]
+name = "*.so"
+text = ""
+
+[[icon.append_rules]]
+name = "*.sql"
+text = ""
+
+[[icon.append_rules]]
+name = "*.styl"
+text = ""
+
+[[icon.append_rules]]
+name = "*.suo"
+text = ""
+
+[[icon.append_rules]]
+name = "*.svi"
+text = ""
+
+[[icon.append_rules]]
+name = "*.swift"
+text = ""
+
+[[icon.append_rules]]
+name = "*.t"
+text = ""
+
+[[icon.append_rules]]
+name = "*.tar"
+text = ""
+
+[[icon.append_rules]]
+name = "*.tex"
+text = "ﭨ"
+
+[[icon.append_rules]]
+name = "*.tgz"
+text = ""
+
+[[icon.append_rules]]
+name = "*.toml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.ts"
+text = ""
+
+[[icon.append_rules]]
+name = "*.tsx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.tta"
+text = ""
+
+[[icon.append_rules]]
+name = "*.twig"
+text = ""
+
+[[icon.append_rules]]
+name = "*.vim"
+text = ""
+
+[[icon.append_rules]]
+name = "*.vimrc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.viv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.vob"
+text = ""
+
+[[icon.append_rules]]
+name = "*.voc"
+text = ""
+
+[[icon.append_rules]]
+name = "*.vox"
+text = ""
+
+[[icon.append_rules]]
+name = "*.wav"
+text = ""
+
+[[icon.append_rules]]
+name = "*.wasm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.webm"
+text = ""
+
+[[icon.append_rules]]
+name = "*.webmanifest"
+text = ""
+
+[[icon.append_rules]]
+name = "*.webp"
+text = ""
+
+[[icon.append_rules]]
+name = "*.wma"
+text = ""
+
+[[icon.append_rules]]
+name = "*.wmv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.wv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xbps"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xcplayground"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xhtml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xls"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xlsx"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xul"
+text = ""
+
+[[icon.append_rules]]
+name = "*.xz"
+text = ""
+
+[[icon.append_rules]]
+name = "*.yaml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.yml"
+text = ""
+
+[[icon.append_rules]]
+name = "*.yuv"
+text = ""
+
+[[icon.append_rules]]
+name = "*.zip"
+text = ""
+
+[[icon.append_rules]]
+name = "*.zsh"
+text = ""
+
+[[icon.append_rules]]
+name = "*"
+text = ""
+
+[[icon.append_rules]]
+name = "*/"
+text = ""
+
+[input.border]
+fg = "#bdae93"
+
+[input.selected]
+reversed = true
+
+[input.title]
+
+[input.value]
+
+[mgr]
+border_symbol = " "
 tab_width = 1
 
-# Border
-border_symbol = " "
-border_style = { fg = "#665c54" }
+[mgr.border_style]
+fg = "#665c54"
 
-# Highlighting
-# syntect_theme = "~/.config/yazi/Gruvbox-Dark.tmTheme"
+[mgr.cwd]
+fg = "#83a598"
 
-# : }}}
+[mgr.find_keyword]
+fg = "#b8bb26"
+italic = true
 
+[mgr.find_position]
+bg = "reset"
+fg = "#fe8019"
+italic = true
 
-# : Status {{{
+[mgr.hovered]
+bg = "#83a598"
+fg = "#282828"
+
+[mgr.marker_copied]
+bg = "#b8bb26"
+fg = "#b8bb26"
+
+[mgr.marker_cut]
+bg = "#fb4934"
+fg = "#fb4934"
+
+[mgr.marker_selected]
+bg = "#b8bb26"
+fg = "#b8bb26"
+
+[mgr.preview_hovered]
+underline = false
+
+[mgr.tab_active]
+bg = "#504945"
+fg = "#282828"
+
+[mgr.tab_inactive]
+bg = "#3c3836"
+fg = "#a89984"
+
+[select.active]
+fg = "#fe8019"
+
+[select.border]
+fg = "#504945"
+
+[select.inactive]
 
 [status]
-separator_open = ""
 separator_close = ""
-separator_style = { fg = "#3c3836", bg = "#3c3836" }
+separator_open = ""
 
-# Mode
-mode_normal = { fg = "#282828", bg = "#A89984", bold = true }
-mode_select = { fg = "#282828", bg = "#b8bb26", bold = true }
-mode_unset = { fg = "#282828", bg = "#d3869b", bold = true }
+[status.mode_normal]
+bg = "#A89984"
+bold = true
+fg = "#282828"
 
-# Progress
-progress_label = { fg = "#ebdbb2", bold = true }
-progress_normal = { fg = "#504945", bg = "#3c3836" }
-progress_error = { fg = "#fb4934", bg = "#3c3836" }
+[status.mode_select]
+bg = "#b8bb26"
+bold = true
+fg = "#282828"
 
-# Permissions
-permissions_t = { fg = "#504945" }
-permissions_r = { fg = "#b8bb26" }
-permissions_w = { fg = "#fb4934" }
-permissions_x = { fg = "#b8bb26" }
-permissions_s = { fg = "#665c54" }
+[status.mode_unset]
+bg = "#d3869b"
+bold = true
+fg = "#282828"
 
-# : }}}
+[status.permissions_r]
+fg = "#b8bb26"
 
+[status.permissions_s]
+fg = "#665c54"
 
-# : Input {{{
+[status.permissions_t]
+fg = "#504945"
 
-[input]
-border = { fg = "#bdae93" }
-title = {}
-value = {}
-selected = { reversed = true }
+[status.permissions_w]
+fg = "#fb4934"
 
-# : }}}
+[status.permissions_x]
+fg = "#b8bb26"
 
+[status.progress_error]
+bg = "#3c3836"
+fg = "#fb4934"
 
-# : Select {{{
+[status.progress_label]
+bold = true
+fg = "#ebdbb2"
 
-[select]
-border = { fg = "#504945" }
-active = { fg = "#fe8019" }
-inactive = {}
+[status.progress_normal]
+bg = "#3c3836"
+fg = "#504945"
 
-# : }}}
+[status.separator_style]
+bg = "#3c3836"
+fg = "#3c3836"
 
+[tasks.border]
+fg = "#504945"
 
-# : Tasks {{{
+[tasks.hovered]
+underline = true
 
-[tasks]
-border = { fg = "#504945" }
-title = {}
-hovered = { underline = true }
-
-# : }}}
-
-
-# : Which {{{
+[tasks.title]
 
 [which]
-mask = { bg = "#3c3836" }
-cand = { fg = "#83a598" }
-rest = { fg = "#928374" }
-desc = { fg = "#fe8019" }
 separator = "  "
-separator_style = { fg = "#504945" }
 
-# : }}}
+[which.cand]
+fg = "#83a598"
 
+[which.desc]
+fg = "#fe8019"
 
-# : Help {{{
+[which.mask]
+bg = "#3c3836"
 
-[help]
-on = { fg = "#fe8019" }
-exec = { fg = "#83a598" }
-desc = { fg = "#928374" }
-hovered = { bg = "#504945", bold = true }
-footer = { fg = "#3c3836", bg = "#a89984" }
+[which.rest]
+fg = "#928374"
 
-# : }}}
-# : File-specific styles {{{
-
-[filetype]
-
-prepend_rules = [
-	# Images
-	{ mime = "image/*", fg = "#94e2d5" },
-
-	# Videos
-	{ mime = "video/*", fg = "#f9e2af" },
-	{ mime = "audio/*", fg = "#f9e2af" },
-
-	# Archives
-	{ mime = "application/zip", fg = "#f5c2e7" },
-	{ mime = "application/gzip", fg = "#f5c2e7" },
-	{ mime = "application/x-tar", fg = "#f5c2e7" },
-	{ mime = "application/x-bzip", fg = "#f5c2e7" },
-	{ mime = "application/x-bzip2", fg = "#f5c2e7" },
-	{ mime = "application/x-7z-compressed", fg = "#f5c2e7" },
-	{ mime = "application/x-rar", fg = "#f5c2e7" },
-
-	# Fallback
-	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#89b4fa" },
-]
-
-
-[icon]
-append_rules = [
-
-	{ name = ".git/", text = "" },
-	{ name = "Desktop/", text = "" },
-	{ name = "Documents/", text = "" },
-	{ name = "Downloads/", text = "" },
-	{ name = "Dotfiles/", text = "" },
-	{ name = "Dropbox/", text = "" },
-	{ name = "Music/", text = "" },
-	{ name = "Pictures/", text = "" },
-	{ name = "Public/", text = "" },
-	{ name = "Templates/", text = "" },
-	{ name = "Videos/", text = "" },
-	{ name = ".bash_aliases", text = "" },
-	{ name = ".bash_history", text = "" },
-	{ name = ".bash_logout", text = "" },
-	{ name = ".bash_profile", text = "" },
-	{ name = ".bashprofile", text = "" },
-	{ name = ".bashrc", text = "" },
-	{ name = ".dmrc", text = "" },
-	{ name = ".DS_Store", text = "" },
-	{ name = ".fasd", text = "" },
-	{ name = ".fehbg", text = "" },
-	{ name = ".gitattributes", text = "" },
-	{ name = ".gitconfig", text = "" },
-	{ name = ".gitignore", text = "" },
-	{ name = ".gitlab-ci.yml", text = "" },
-	{ name = ".gvimrc", text = "" },
-	{ name = ".inputrc", text = "" },
-	{ name = ".jack-settings", text = "" },
-	{ name = ".mime.types", text = "" },
-	{ name = ".ncmpcpp", text = "" },
-	{ name = ".nvidia-settings-rc", text = "" },
-	{ name = ".pam_environment", text = "" },
-	{ name = ".profile", text = "" },
-	{ name = ".recently-used", text = "" },
-	{ name = ".selected_editor", text = "" },
-	{ name = ".vim", text = "" },
-	{ name = ".viminfo", text = "" },
-	{ name = ".vimrc", text = "" },
-	{ name = ".Xauthority", text = "" },
-	{ name = ".Xdefaults", text = "" },
-	{ name = ".xinitrc", text = "" },
-	{ name = ".xinputrc", text = "" },
-	{ name = ".Xresources", text = "" },
-	{ name = ".zshrc", text = "" },
-	{ name = "_gvimrc", text = "" },
-	{ name = "_vimrc", text = "" },
-	{ name = "a.out", text = "" },
-	{ name = "authorized_keys", text = "" },
-	{ name = "bspwmrc", text = "" },
-	{ name = "cmakelists.txt", text = "" },
-	{ name = "config", text = "" },
-	{ name = "config.ac", text = "" },
-	{ name = "config.m4", text = "" },
-	{ name = "config.mk", text = "" },
-	{ name = "config.ru", text = "" },
-	{ name = "configure", text = "" },
-	{ name = "docker-compose.yml", text = "" },
-	{ name = "dockerfile", text = "" },
-	{ name = "Dockerfile", text = "" },
-	{ name = "dropbox", text = "" },
-	{ name = "exact-match-case-sensitive-1.txt", text = "X1" },
-	{ name = "exact-match-case-sensitive-2", text = "X2" },
-	{ name = "favicon.ico", text = "" },
-	{ name = "gemfile", text = "" },
-	{ name = "gruntfile.coffee", text = "" },
-	{ name = "gruntfile.js", text = "" },
-	{ name = "gruntfile.ls", text = "" },
-	{ name = "gulpfile.coffee", text = "" },
-	{ name = "gulpfile.js", text = "" },
-	{ name = "gulpfile.ls", text = "" },
-	{ name = "ini", text = "" },
-	{ name = "known_hosts", text = "" },
-	{ name = "ledger", text = "" },
-	{ name = "license", text = "" },
-	{ name = "LICENSE", text = "" },
-	{ name = "LICENSE.md", text = "" },
-	{ name = "LICENSE.txt", text = "" },
-	{ name = "Makefile", text = "" },
-	{ name = "makefile", text = "" },
-	{ name = "Makefile.ac", text = "" },
-	{ name = "Makefile.in", text = "" },
-	{ name = "mimeapps.list", text = "" },
-	{ name = "mix.lock", text = "" },
-	{ name = "node_modules", text = "" },
-	{ name = "package-lock.json", text = "" },
-	{ name = "package.json", text = "" },
-	{ name = "playlists", text = "" },
-	{ name = "procfile", text = "" },
-	{ name = "Rakefile", text = "" },
-	{ name = "rakefile", text = "" },
-	{ name = "react.jsx", text = "" },
-	{ name = "README", text = "" },
-	{ name = "README.markdown", text = "" },
-	{ name = "README.md", text = "" },
-	{ name = "README.rst", text = "" },
-	{ name = "README.txt", text = "" },
-	{ name = "sxhkdrc", text = "" },
-	{ name = "user-dirs.dirs", text = "" },
-	{ name = "webpack.config.js", text = "" },
-	{ name = "*.3g2", text = "" },
-	{ name = "*.3gp", text = "" },
-	{ name = "*.7z", text = "" },
-	{ name = "*.8svx", text = "" },
-	{ name = "*.a", text = "" },
-	{ name = "*.aa", text = "" },
-	{ name = "*.aac", text = "" },
-	{ name = "*.aax", text = "" },
-	{ name = "*.ai", text = "" },
-	{ name = "*.aiff", text = "" },
-	{ name = "*.alac", text = "" },
-	{ name = "*.amr", text = "" },
-	{ name = "*.amv", text = "" },
-	{ name = "*.ape", text = "" },
-	{ name = "*.apk", text = "" },
-	{ name = "*.asf", text = "" },
-	{ name = "*.asm", text = "" },
-	{ name = "*.asp", text = "" },
-	{ name = "*.au", text = "" },
-	{ name = "*.aup", text = "" },
-	{ name = "*.avi", text = "" },
-	{ name = "*.awb", text = "" },
-	{ name = "*.awk", text = "" },
-	{ name = "*.bash", text = "" },
-	{ name = "*.bat", text = "" },
-	{ name = "*.bmp", text = "" },
-	{ name = "*.bz2", text = "" },
-	{ name = "*.c", text = "" },
-	{ name = "*.c++", text = "" },
-	{ name = "*.cab", text = "" },
-	{ name = "*.cbr", text = "" },
-	{ name = "*.cbz", text = "" },
-	{ name = "*.cc", text = "" },
-	{ name = "*.cda", text = "" },
-	{ name = "*.class", text = "" },
-	{ name = "*.clj", text = "" },
-	{ name = "*.cljc", text = "" },
-	{ name = "*.cljs", text = "" },
-	{ name = "*.cmake", text = "" },
-	{ name = "*.coffee", text = "" },
-	{ name = "*.conf", text = "" },
-	{ name = "*.cp", text = "" },
-	{ name = "*.cpio", text = "" },
-	{ name = "*.cpp", text = "" },
-	{ name = "*.csh", text = "" },
-	{ name = "*.css", text = "" },
-	{ name = "*.csv", text = "" },
-	{ name = "*.cue", text = "" },
-	{ name = "*.cvs", text = "" },
-	{ name = "*.cxx", text = "" },
-	{ name = "*.d", text = "" },
-	{ name = "*.dart", text = "" },
-	{ name = "*.db", text = "" },
-	{ name = "*.deb", text = "" },
-	{ name = "*.diff", text = "" },
-	{ name = "*.dll", text = "" },
-	{ name = "*.doc", text = "" },
-	{ name = "*.docx", text = "" },
-	{ name = "*.dss", text = "" },
-	{ name = "*.dump", text = "" },
-	{ name = "*.dvf", text = "" },
-	{ name = "*.edn", text = "" },
-	{ name = "*.eex", text = "" },
-	{ name = "*.efi", text = "" },
-	{ name = "*.ejs", text = "" },
-	{ name = "*.elf", text = "" },
-	{ name = "*.elm", text = "" },
-	{ name = "*.epub", text = "" },
-	{ name = "*.erl", text = "" },
-	{ name = "*.ex", text = "" },
-	{ name = "*.exe", text = "" },
-	{ name = "*.exs", text = "" },
-	{ name = "*.f//", text = "" },
-	{ name = "*.fifo", text = "|" },
-	{ name = "*.fish", text = "" },
-	{ name = "*.flac", text = "" },
-	{ name = "*.flv", text = "" },
-	{ name = "*.fs", text = "" },
-	{ name = "*.fsi", text = "" },
-	{ name = "*.fsscript", text = "" },
-	{ name = "*.fsx", text = "" },
-	{ name = "*.gem", text = "" },
-	{ name = "*.gemspec", text = "" },
-	{ name = "*.gif", text = "" },
-	{ name = "*.gifv", text = "" },
-	{ name = "*.go", text = "" },
-	{ name = "*.gsm", text = "" },
-	{ name = "*.gz", text = "" },
-	{ name = "*.gzip", text = "" },
-	{ name = "*.h", text = "" },
-	{ name = "*.haml", text = "" },
-	{ name = "*.hbs", text = "" },
-	{ name = "*.hh", text = "" },
-	{ name = "*.hpp", text = "" },
-	{ name = "*.hrl", text = "" },
-	{ name = "*.hs", text = "" },
-	{ name = "*.htaccess", text = "" },
-	{ name = "*.htm", text = "" },
-	{ name = "*.html", text = "" },
-	{ name = "*.htpasswd", text = "" },
-	{ name = "*.hxx", text = "" },
-	{ name = "*.ico", text = "" },
-	{ name = "*.iklax", text = "" },
-	{ name = "*.img", text = "" },
-	{ name = "*.ini", text = "" },
-	{ name = "*.iso", text = "" },
-	{ name = "*.ivs", text = "" },
-	{ name = "*.jar", text = "" },
-	{ name = "*.java", text = "" },
-	{ name = "*.jl", text = "" },
-	{ name = "*.jpeg", text = "" },
-	{ name = "*.jpg", text = "" },
-	{ name = "*.js", text = "" },
-	{ name = "*.json", text = "" },
-	{ name = "*.jsx", text = "" },
-	{ name = "*.key", text = "" },
-	{ name = "*.ksh", text = "" },
-	{ name = "*.leex", text = "" },
-	{ name = "*.less", text = "" },
-	{ name = "*.lha", text = "" },
-	{ name = "*.lhs", text = "" },
-	{ name = "*.log", text = "" },
-	{ name = "*.lua", text = "" },
-	{ name = "*.lzh", text = "" },
-	{ name = "*.lzma", text = "" },
-	{ name = "*.m4a", text = "" },
-	{ name = "*.m4b", text = "" },
-	{ name = "*.m4p", text = "" },
-	{ name = "*.m4v", text = "" },
-	{ name = "*.markdown", text = "" },
-	{ name = "*.md", text = "" },
-	{ name = "*.mdx", text = "" },
-	{ name = "*.mjs", text = "" },
-	{ name = "*.mka", text = "" },
-	{ name = "*.mkv", text = "" },
-	{ name = "*.ml", text = "λ" },
-	{ name = "*.mli", text = "λ" },
-	{ name = "*.mmf", text = "" },
-	{ name = "*.mng", text = "" },
-	{ name = "*.mogg", text = "" },
-	{ name = "*.mov", text = "" },
-	{ name = "*.movpkg", text = "" },
-	{ name = "*.mp3", text = "" },
-	{ name = "*.mp4", text = "" },
-	{ name = "*.mpc", text = "" },
-	{ name = "*.mpeg", text = "" },
-	{ name = "*.mpg", text = "" },
-	{ name = "*.msi", text = "" },
-	{ name = "*.msv", text = "" },
-	{ name = "*.mustache", text = "" },
-	{ name = "*.mxf", text = "" },
-	{ name = "*.nix", text = "" },
-	{ name = "*.nmf", text = "" },
-	{ name = "*.norg", text = "" },
-	{ name = "*.o", text = "" },
-	{ name = "*.oga", text = "" },
-	{ name = "*.ogg", text = "" },
-	{ name = "*.opus", text = "" },
-	{ name = "*.org", text = "" },
-	{ name = "*.pdf", text = "" },
-	{ name = "*.php", text = "" },
-	{ name = "*.pl", text = "" },
-	{ name = "*.pm", text = "" },
-	{ name = "*.png", text = "" },
-	{ name = "*.pp", text = "" },
-	{ name = "*.ppt", text = "" },
-	{ name = "*.pptx", text = "" },
-	{ name = "*.ps1", text = "" },
-	{ name = "*.psb", text = "" },
-	{ name = "*.psd", text = "" },
-	{ name = "*.pub", text = "" },
-	{ name = "*.py", text = "" },
-	{ name = "*.pyc", text = "" },
-	{ name = "*.pyd", text = "" },
-	{ name = "*.pyo", text = "" },
-	{ name = "*.ra", text = "" },
-	{ name = "*.rake", text = "" },
-	{ name = "*.rar", text = "" },
-	{ name = "*.rb", text = "" },
-	{ name = "*.rc", text = "" },
-	{ name = "*.rf64", text = "" },
-	{ name = "*.rlib", text = "" },
-	{ name = "*.rm", text = "" },
-	{ name = "*.rmd", text = "" },
-	{ name = "*.rmvb", text = "" },
-	{ name = "*.rom", text = "" },
-	{ name = "*.rpm", text = "" },
-	{ name = "*.rproj", text = "鉶" },
-	{ name = "*.rs", text = "" },
-	{ name = "*.rss", text = "" },
-	{ name = "*.rtf", text = "" },
-	{ name = "*.s", text = "" },
-	{ name = "*.sass", text = "" },
-	{ name = "*.scala", text = "" },
-	{ name = "*.scss", text = "" },
-	{ name = "*.sh", text = "" },
-	{ name = "*.slim", text = "" },
-	{ name = "*.sln", text = "" },
-	{ name = "*.so", text = "" },
-	{ name = "*.sql", text = "" },
-	{ name = "*.styl", text = "" },
-	{ name = "*.suo", text = "" },
-	{ name = "*.svi", text = "" },
-	{ name = "*.swift", text = "" },
-	{ name = "*.t", text = "" },
-	{ name = "*.tar", text = "" },
-	{ name = "*.tex", text = "ﭨ" },
-	{ name = "*.tgz", text = "" },
-	{ name = "*.toml", text = "" },
-	{ name = "*.ts", text = "" },
-	{ name = "*.tsx", text = "" },
-	{ name = "*.tta", text = "" },
-	{ name = "*.twig", text = "" },
-	{ name = "*.vim", text = "" },
-	{ name = "*.vimrc", text = "" },
-	{ name = "*.viv", text = "" },
-	{ name = "*.vob", text = "" },
-	{ name = "*.voc", text = "" },
-	{ name = "*.vox", text = "" },
-	{ name = "*.wav", text = "" },
-	{ name = "*.wasm", text = "" },
-	{ name = "*.webm", text = "" },
-	{ name = "*.webmanifest", text = "" },
-	{ name = "*.webp", text = "" },
-	{ name = "*.wma", text = "" },
-	{ name = "*.wmv", text = "" },
-	{ name = "*.wv", text = "" },
-	{ name = "*.xbps", text = "" },
-	{ name = "*.xcplayground", text = "" },
-	{ name = "*.xhtml", text = "" },
-	{ name = "*.xls", text = "" },
-	{ name = "*.xlsx", text = "" },
-	{ name = "*.xml", text = "" },
-	{ name = "*.xul", text = "" },
-	{ name = "*.xz", text = "" },
-	{ name = "*.yaml", text = "" },
-	{ name = "*.yml", text = "" },
-	{ name = "*.yuv", text = "" },
-	{ name = "*.zip", text = "" },
-	{ name = "*.zsh", text = "" },
-
-	# default
-	{ name = "*", text = "" },
-	{ name = "*/", text = "" },
-
-]
+[which.separator_style]
+fg = "#504945"
