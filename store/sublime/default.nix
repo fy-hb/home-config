@@ -13,7 +13,8 @@
   home.file.".config/sublime-text/Packages/FastOlympicCodingHook/FastOlympicCodingHook.py".source = ./. + "/FastOlympicCodingHook/FastOlympicCodingHook.py";
   home.file.".config/sublime-text/Packages/FastOlympicCodingHook/Context.sublime-menu".source = ./. + "/FastOlympicCodingHook/Context.sublime-menu";
 
-  home.file.".config/sublime-text/Packages/User/FastOlympicCoding.sublime-settings".source = ./. + "/CppFastOlympicCoding/FastOlympicCoding.sublime-settings";
-
+  home.file.".config/sublime-text/Packages/User/FastOlympicCoding.sublime-settings".source = ./. + "/package-settings/FastOlympicCoding.sublime-settings";
+  home.file.".config/sublime-text/Packages/User/clang_format_custom.sublime-settings".source = ./. + "/package-settings/clang_format_custom.sublime-settings";
+  home.file.".config/sublime-text/Packages/User/clang_format.sublime-settings".source = ./. + "/package-settings/clang_format.sublime-settings";
 }
 
